@@ -1,0 +1,88 @@
+{
+    "name": "Aditya-portfolio",
+    "version": "1.0.0",
+    "description": "A modern portfolio website with enhanced animations and responsive design",
+    "private": true,
+    "scripts": {
+      "start": "vite",
+      "dev": "vite",
+      "build": "vite build",
+      "preview": "vite preview",
+      "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
+      "format": "prettier --write \"src/**/*.{js,jsx,ts,tsx,css,scss,json}\"",
+      "prepare": "husky install",
+      "stylelint": "stylelint \"**/*.{css,scss}\" --fix",
+      "analyze": "source-map-explorer 'dist/assets/*.js'"
+    },
+    "dependencies": {
+      "react": "^18.2.0",
+      "react-dom": "^18.2.0",
+      "react-router-dom": "^6.14.2"
+    },
+    "devDependencies": {
+      "@types/react": "^18.2.15",
+      "@types/react-dom": "^18.2.7",
+      "@typescript-eslint/eslint-plugin": "^6.4.1",
+      "@typescript-eslint/parser": "^6.4.1",
+      "@vitejs/plugin-react": "^4.0.3",
+      "autoprefixer": "^10.4.15",
+      "eslint": "^8.47.0",
+      "eslint-config-prettier": "^9.0.0",
+      "eslint-plugin-react": "^7.33.1",
+      "eslint-plugin-react-hooks": "^4.6.0",
+      "husky": "^8.0.3",
+      "lint-staged": "^13.2.3",
+      "postcss": "^8.4.29",
+      "prettier": "^3.0.2",
+      "sass": "^1.66.1",
+      "source-map-explorer": "^2.5.3",
+      "stylelint": "^15.10.2",
+      "stylelint-config-standard": "^34.0.0",
+      "stylelint-order": "^6.0.3",
+      "typescript": "^5.1.6",
+      "vite": "^4.4.5",
+      "vite-plugin-svgr": "^3.2.0"
+    },
+    "browserslist": {
+      "production": [
+        ">0.2%",
+        "not dead",
+        "not op_mini all"
+      ],
+      "development": [
+        "last 1 chrome version",
+        "last 1 firefox version",
+        "last 1 safari version"
+      ]
+    },
+    "lint-staged": {
+      "**/*.{js,jsx,ts,tsx}": [
+        "eslint --fix",
+        "prettier --write"
+      ],
+      "**/*.{css,scss}": [
+        "stylelint --fix",
+        "prettier --write"
+      ],
+      "**/*.{json,md}": [
+        "prettier --write"
+      ]
+    },
+    "keywords": [
+      "portfolio",
+      "react",
+      "vite",
+      "modern-design",
+      "animations"
+    ],
+    "author": "Aditya Gajbhiye",
+    "license": "MIT",
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/AdityaIITBHU26/my_portfolio"
+    },
+    "bugs": {
+      "url": "https://github.com/AdityaIITBHU26/my_portfolio/issues"
+    },
+    "homepage": "https://yourwebsite.com"
+  }
