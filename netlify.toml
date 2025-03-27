@@ -1,0 +1,22 @@
+[build]
+  command = "echo 'No build needed for static site'"
+  publish = "public/"
+
+[dev]
+  command = "python api/resume-ai/app.py & npx serve public/"
+  port = 3000
+  targetPort = 5000
+
+[[redirects]]
+  from = "/api/*"
+  to = "http://localhost:5000/api/:splat"
+  status = 200
+  force = true
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "DENY"
+    X-Content-Type-Options = "nosniff"
+    X-XSS-Protection = "1; mode=block"
+    Content-Security-Policy = "default-src 'self'; script-src 'self' 'unsafe-inline' cdnjs.cloudflare.com; style-src 'self' 'unsafe-inline' cdnjs.cloudflare.com; img-src 'self' data:; font-src 'self'; connect-src 'self' api.example.com;"

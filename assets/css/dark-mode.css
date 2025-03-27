@@ -1,0 +1,49 @@
+[data-theme="dark"] {
+    --apple-black: #f5f5f7;
+    --apple-white: #1d1d1f;
+    --apple-glass: rgba(29, 29, 31, 0.7);
+    --apple-glass-border: rgba(29, 29, 31, 0.3);
+    --apple-gray: #a1a1a6;
+}
+
+[data-theme="dark"] .skill-card,
+[data-theme="dark"] .project-card,
+[data-theme="dark"] .resume-iframe-container {
+    background-color: rgba(30, 30, 32, 0.9);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
+}
+
+[data-theme="dark"] .timeline-item {
+    background-color: rgba(30, 30, 32, 0.9);
+}
+
+[data-theme="dark"] .timeline-item::before {
+    background: var(--apple-gradient);
+}
+
+[data-theme="dark"] #ai-input {
+    background-color: rgba(30, 30, 32, 0.9);
+    color: var(--apple-black);
+}
+[data-theme="dark"] {
+    --dark: #f8fafc;
+    --light: #1e293b;
+    --gray-light: #334155;
+    
+    .navbar {
+      background-color: var(--light);
+      border-bottom-color: #334155;
+    }
+    
+    .project-card {
+      background: #334155;
+      border-color: #475569;
+    }
+    
+    .contact-form input,
+    .contact-form textarea {
+      background-color: #334155;
+      border-color: #475569;
+      color: white;
+    }
+  }
